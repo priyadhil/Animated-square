@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::after {
+  content: "f28d";
+  display: block;
+  animation: change 1s linear infinite;
+}
+
+@keyframes change {
+  0% {
+    content: "f28d";
+  }
+  30% {
+    content: "f04d";
+  }
+  65% {
+    content: "f009";
+  }
+  100% {
+    content: "f00a";
+  }
+}

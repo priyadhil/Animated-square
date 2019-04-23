@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script
+      data-search-pseudo-elements
+      defer
+      src="https://use.fontawesome.com/releases/latest/js/all.js"
+      integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .square:after {
+        font-family: FontAwesome;
+        content: "\f28d";
+        font-weight: 900;
+        display: block;
+
+        animation: change 4s linear infinite;
+      }
+
+      @keyframes change {
+        0% {
+          font-family: FontAwesome;
+          content: "\f04d";
+          font-weight: 900;
+          font-size: 4rem;
+          color: yellow;
+          box-sizing: border-box;
+          box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.5);
+          margin-top: 1%;
+        }
+        50% {
+          font-family: FontAwesome;
+          content: "\f009";
+          font-weight: 900;
+          font-size: 8rem;
+          transform: rotate(180deg);
+          color: yellowgreen;
+          box-sizing: border-box;
+          box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.5);
+        }
+        100% {
+          font-family: FontAwesome;
+          content: "\f00a";
+          font-weight: 900;
+          font-size: 12rem;
+          transform: rotate(360deg);
+          color: olive;
+          box-sizing: border-box;
+          box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+  </body>
+</html>

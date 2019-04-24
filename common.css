@@ -5,23 +5,66 @@ body {
   align-items: center;
 }
 
-body::after {
-  content: "f28d";
+.square:after {
+  font-family: FontAwesome;
+  content: "\f28d";
+  font-weight: 900;
   display: block;
-  animation: change 1s linear infinite;
+
+  animation: change 4s linear infinite;
 }
 
 @keyframes change {
   0% {
-    content: "f28d";
+    font-family: FontAwesome;
+    content: "\f04d";
+    font-weight: 900;
+    font-size: 3rem;
+    transform: rotate(0deg);
+    color: yellow;
+    /* box-sizing: border-box;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 1%; */
   }
-  30% {
-    content: "f04d";
+  25% {
+    font-family: FontAwesome;
+    content: "\f009";
+    font-weight: 900;
+    font-size: 6rem;
+    transform: rotate(90deg);
+    color: yellowgreen;
+    /* box-sizing: border-box;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 1%; */
   }
-  65% {
-    content: "f009";
+  50% {
+    font-family: FontAwesome;
+    content: "\f00a";
+    font-weight: 900;
+    font-size: 9rem;
+    transform: rotate(180deg);
+    color: olive;
+    /* box-sizing: border-box;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 1%; */
+  }
+  75% {
+    font-family: FontAwesome;
+    content: "\f009";
+    font-weight: 900;
+    font-size: 6rem;
+    transform: rotate(90deg);
+    color: yellowgreen;
   }
   100% {
-    content: "f00a";
+    font-family: FontAwesome;
+    content: "\f04d";
+    font-weight: 900;
+    font-size: 3rem;
+    transform: rotate(0deg);
+    color: yellow;
   }
 }
